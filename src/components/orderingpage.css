@@ -1,0 +1,62 @@
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Sidebar drawer (RIGHT side version) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -360px;   /* start hidden off-screen */
+  width: 360px;
+  height: 100%;
+  background: #f9f9f9;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.2); /* shadow flipped */
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0; /* slide in */
+}
+
+.polymer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.polymer-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.color-box {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
