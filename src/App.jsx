@@ -1,24 +1,21 @@
-  import MicroscopeDashboard from "./components/Gallery";
-  import Header from "./components/DropDown";
-  import OrderingPage from "./components/OrderingPage";
-  import ProductsCard from "./components/ProductsCard";
+  import NasaDashboard from "./components/NasaDashboard";
   import { Routes, Route } from "react-router-dom";
+  import 'leaflet/dist/leaflet.css';
+
 
   const App = () => {
   return (
     <div>
-      <Header />
       <Routes>
         <Route 
           path="/" 
           element={
             <div>
-              <OrderingPage/>
-              <MicroscopeDashboard/>
+              <NasaDashboard/>
             </div>
           } 
         />
-        <Route path="/order" element={<OrderingPage />} />
+        
       </Routes>
     </div>
   );
